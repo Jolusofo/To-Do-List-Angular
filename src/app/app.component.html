@@ -1,22 +1,25 @@
-<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom shadow-sm bg-color">
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 border-bottom shadow-sm bg-color cursor" [ngClass]="{'acessibilidade':acess}">
   <h2 class="my-0 mr-md-auto font-size-large font-weight-bold text-white" routerLink="/">To Do List</h2>
   <nav class="my-2 my-md-0 mr-md-3">
     <a class="btn btn-outline-light" routerLink="/listas">Mostrar Tarefas</a>
   </nav>
+  <nav class="my-2 my-md-0 mr-md-3">
   <a class="btn btn-outline-light" routerLink="/create">Adicionar nova Tarefa</a>
+  </nav>
+  <!--
+     <nav class="my-2 my-md-0 mr-md-3">
+    <a class="btn btn-outline-light"  (click)="acessbility()">A</a>
+    </nav> -->
 </div>
 
 
 
+
+
+
+
+
 <router-outlet></router-outlet>
-
-
-
-
-
-
-
-
-<footer class="colors font d-flex justify-content-center align-items-center">
+<footer class="colors font d-flex justify-content-center align-items-center"  [ngClass]="{'acessibilidade':acess}"> 
   <p class="margin-p">Desenvolvido por João, Rafael e Ully</p>
 </footer>
